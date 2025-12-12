@@ -1,0 +1,1 @@
+Run with gcc main.cpp -o main.exec

@@ -1,0 +1,25 @@
+# macOS C/C++ Build Artifacts
+a.out
+*.out
+*.o
+*.obj
+*.exe
+*.exec
+*.bin
+
+# Files with no extension that are likely executables
+# (Git doesn't match "no extension", but these rules catch common patterns)
+main
+build/
+dist/
+Debug/
+Release/
+
+# GCC / Clang intermediates
+*.d
+*.gcda
+*.gcno
+*.gcov
+
+# VS Code files
+.vscode/

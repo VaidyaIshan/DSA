@@ -27,18 +27,23 @@ void dequeue(){
         printf("\nDequeued %d",queue[front]);
         front=front+1;
         if(front>rear)
-        front=rear-1;
+        front=rear=-1;
         
     }
 
 }
 void display(int queue[]){
+    if(front==-1){
+        printf("\n No elements in Queue");
+    }
+    else{
     int i;
     printf("\n Elements in Queue:\n");
     for(i=front;i<=rear;i++){
         
         printf("%d\t",queue[i]);
     }
+}
 }
 int main(){
     dequeue();

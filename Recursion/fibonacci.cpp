@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int fibonacci(int n) {
-    // Base cases: stop the recursion
+ 
     if (n == 0) {
         return 0;
     } else if (n == 1) {
@@ -19,17 +19,14 @@ int main() {
   
     printf("Enter the number of terms: ");
     scanf("%d", &n);
-
-    if (n < 0) {
-        printf("Number of terms cannot be negative.\n");
-    } else {
+ 
         printf("Fibonacci Series: ");
        
         for (i = 0; i < n; i++) {
             printf("%d ", fibonacci(i));
         }
-        printf("\n");
-    }
+        
+
 
     return 0;
 }
